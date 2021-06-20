@@ -12,4 +12,25 @@ public class Study1 {
         System.out.println("The area of the rectangle of length " + rectangle2.length + " and weight " + rectangle2.weight + " is " + rectangle2.getArea());
         System.out.println("The perimeter of the rectangle of length " + rectangle2.length + " and weight " + rectangle2.weight + " is " + rectangle2.getPerimeter());
     }
+
+    static class Rectangle {
+        double length = 1;
+        double weight = 1;
+
+        Rectangle() {
+        }
+
+        Rectangle(double newLength, double newWeight) {
+            length = newLength;
+            weight = newWeight;
+        }
+
+        double getArea() {
+            return length * weight;
+        }
+
+        double getPerimeter() {
+            return (length + weight) * 2;
+        }
+    }
 }
