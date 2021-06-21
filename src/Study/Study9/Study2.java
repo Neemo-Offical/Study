@@ -19,7 +19,7 @@ public class Study2 {
             currentPrice = newCurrentPrice;
         }
         double getChangePercent() {
-            return (currentPrice - previousClosingPrice) / previousClosingPrice;
+            return (currentPrice - previousClosingPrice) / previousClosingPrice * 100;
         }
     }
 }
